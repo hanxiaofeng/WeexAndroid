@@ -9,6 +9,7 @@ import android.widget.Toast;
 import com.taobao.weex.IWXRenderListener;
 import com.taobao.weex.WXSDKInstance;
 import com.taobao.weex.common.WXRenderStrategy;
+import com.taobao.weex.utils.WXFileUtils;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -41,10 +42,10 @@ public class WeexActivity extends Activity implements IWXRenderListener {
 //        options.put(WXSDKInstance.BUNDLE_URL, url);    // 传递bundleUrl
         options.put("data", param);  // 传递自定义参数 aa
 
-//        mInstance.render("WeexQuickStart", WXFileUtils.loadAsset(URL, this), options, null, -1, -1, WXRenderStrategy.APPEND_ASYNC);
+        mInstance.render("WeexQuickStart", WXFileUtils.loadAsset(URL, this), options, null, -1, -1, WXRenderStrategy.APPEND_ASYNC);
 
 
-        mInstance.renderByUrl("weex", URL, options, null, WXRenderStrategy.APPEND_ASYNC);
+//        mInstance.renderByUrl("weex", URL, options, null, WXRenderStrategy.APPEND_ASYNC);
     }
 
     public void show(){

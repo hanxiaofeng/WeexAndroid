@@ -16,8 +16,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this,WeexActivity.class);
-//                intent.putExtra("url","http://192.168.61.99:8080/examples/listview.js");
-                intent.putExtra("url","http://192.168.61.99:8080/examples/location.js");
+                intent.putExtra("url","provincePage.js");
+//                intent.putExtra("url","http://192.168.61.99:8080/examples/location.js");
                 startActivity(intent);
             }
         });

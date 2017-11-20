@@ -64,7 +64,7 @@ public class WXEventModule extends WXModule {
     }
 
     @JSMethod
-    public void backtohome(String msg) {
+    public void backTitle() {
         if (mWXSDKInstance.getContext() instanceof Activity) {
             ((Activity) mWXSDKInstance.getContext()).finish();
         }
