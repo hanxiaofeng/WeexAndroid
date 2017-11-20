@@ -1,13 +1,13 @@
 # WeexAndroid
 weex android集成的例子
 
-####1.如何创建项目
+#### 1.如何创建项目
 
 - 使用```weex init 项目名称```命令；
 - 进入项目目录，执行```npm install```安装相关依赖库；
 - 查看页面执行效果：使用```weex debug 文件名字```，然后使用[playground Apk](http://weex.apache.org/cn/playground.html)扫描浏览器生成的二维码即可看到运行效果；
 
-####2.集成到android
+#### 2.集成到android
 
 1.添加必要的依赖
 ```
@@ -53,7 +53,7 @@ weex android集成的例子
 ```
 
 
-####3.更多
+#### 3.更多
 
 [http://weex.apache.org/cn/](http://weex.apache.org/cn/)
 
